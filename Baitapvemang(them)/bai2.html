@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baì 2</title>
+    <!-- Bài 2:
+    Viết chương trình sinh ra một mảng M gồm 10 phần tử được sinh ngẫu nhiên từ 40 đến 50 và những phần tử trong mảng
+    phải khác nhau (nghĩa là ví dụ giá trị 41 đã xuất hiện rồi thì không cho xuất hiện nữa). -->
+</head>
+
+<body>
+    <script>
+        let a = new Array();
+        let i = 0;
+        do {
+            let t = Math.floor(Math.random() * 10 + 40);
+            if (a.indexOf(t) == -1) {
+
+
+                a[i] = t;
+                i++;
+            }
+        } while (i < 10);
+        document.write("Các phần tử của mảng là: " + a + " <br> ");
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
